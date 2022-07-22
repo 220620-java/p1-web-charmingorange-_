@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://JAVA.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>Charming_Orange_Project_1</display-name>
+
+	<servlet>
+		<!-- telling the web container a servlet that it needs to create -->
+		<servlet-name>goodOne</servlet-name>
+		<servlet-class>com.revature.servlets.TestServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>goodOne</servlet-name>
+		<url-pattern>/getTable/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- telling the web container a servlet that it needs to create -->
+		<servlet-name>InsertServlet</servlet-name>
+		<servlet-class>com.revature.servlets.InsertServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InsertServlet</servlet-name>
+		<url-pattern>/insert/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- telling the web container a servlet that it needs to create -->
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>com.revature.servlets.UpdateServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/update/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- telling the web container a servlet that it needs to create -->
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>com.revature.servlets.DeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/delete/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- telling the web container a servlet that it needs to create -->
+		<servlet-name>FindServlet</servlet-name>
+		<servlet-class>com.revature.servlets.FindByServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FindServlet</servlet-name>
+		<url-pattern>/find/*</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
